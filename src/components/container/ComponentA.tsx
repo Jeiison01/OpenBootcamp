@@ -1,7 +1,6 @@
 
-import { useEffect, useState } from 'react';
-import { State } from '../../models/contact.class';
-import Contact from '../pure/Contact';
+import {useState } from 'react';
+import Contact from '../pure/ComponentB';
 
 
 type Props = {
