@@ -8,8 +8,20 @@ type Props = {
 const Contact = (props: Props) => {
 
     const defaultContact = new ContactClass(props.contact);
+    console.log('hasta aqui todo fino', defaultContact)
+    
     
     const {name, email, lastName, coneccted} = defaultContact.state
+    function handleClick() {
+      defaultContact.componentDidMount()
+      defaultContact.cambiarstate()
+      // defaultContact.setState(
+      //   (prevState => ({
+      //     ...prevState,
+      //     coneccted: !prevState.coneccted
+      // }))
+      // )
+    }
     
   return (
     <div>

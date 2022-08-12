@@ -26,5 +26,15 @@ export default class ContactClass extends Component<ClassProps, State> {
         }
     }
     
+    cambiarstate(){
+        console.log('clic', this.state.coneccted)
+        this.setState((prevState) => console.log('clicsapo', prevState))
+        console.log('clic', this.state.coneccted)
+        console.log('despues click2', this.state.coneccted)
+    }
+
+    componentDidMount(){
+
+    }
 
 }
